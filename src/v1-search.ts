@@ -86,7 +86,6 @@ export default function (route, auth: IBasicAuth<RedisSearchPatchConfig>, storag
       res.status(HTTP_STATUS.OK).json(response);
     } catch (error) {
       logger.error({ error }, 'search endpoint has failed @{error.message}');
-      throw error;
       next(next);
       return;
     }
