@@ -5,6 +5,7 @@ The middleware overrides v1/search endpoint with a redis search based backend fo
 The package will be migrated to verdaccio-redis-storage after verdaccio@6 release.
 
 Notice issue: auth check is disable for the search end point.
+
 ---
 
 ## development
