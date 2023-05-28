@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/openupm/verdaccio-redis-search-patch/compare/1.0.0...1.0.1) (2023-05-28)
+
+
+### Bug Fixes
+
+* ensure maintainers field in search result item ([9233725](https://github.com/openupm/verdaccio-redis-search-patch/commit/92337250c048005e7ca9224c97ecee91ef412b63))
+
 # 1.0.0 (2022-10-23)
 
 
