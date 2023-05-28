@@ -118,7 +118,7 @@ export function mapManifestToSearchPackageBody(
     // FIXME: not possible fill this out from a private package
     publisher: {},
     // FIXME: type
-    maintainers: version.maintainers as any,
+    maintainers: version.maintainers as any || [version.author].filter(Boolean),
     links: {
       npm: '',
       homepage: version.homepage,
