@@ -49,7 +49,7 @@ export default function (route, auth: IBasicAuth<RedisSearchPatchConfig>, storag
       abort.abort();
     });
 
-    size = parseInt(size, 10) || 20;
+    size = parseInt(size, 10) || 250;
     from = parseInt(from, 10) || 0;
 
     try {
