@@ -51,6 +51,8 @@ export default function (route, auth: IBasicAuth<RedisSearchPatchConfig>, storag
 
     size = parseInt(size, 10) || 250;
     from = parseInt(from, 10) || 0;
+    query.size = size;
+    query.from = from;
 
     try {
       data = await search(storage, logger, {
@@ -72,9 +74,19 @@ export default function (route, auth: IBasicAuth<RedisSearchPatchConfig>, storag
       // );
       const checkAccessPromises: searchUtils.SearchItemPkg[] = data;
 
-      const final: searchUtils.SearchItemPkg[] = checkAccessPromises
-        .filter((i) => !_.isNull(i))
-        .slice(from, size);
+      let final: searchUtils.SearchItemPkg[] = checkAccessPromises.filter((i) => !_.isNull(i));
+
+      // If the search is for searchV1, the search result has already been limited by the 'from' and 'size' parameters.
+      // Otherwise, we need to slice the result here.
+      let storagePlugin = (storage as any).localStorage.storagePlugin;
+      if (typeof storagePlugin.loadedBackends !== 'undefined') {
+        storagePlugin = storagePlugin.loadedBackends['redis-storage'];
+        logger.debug('VerdaccioStorageProxy found');
+      }
+      if (typeof storagePlugin.searchV1 === 'undefined') {
+        final = final.slice(from, size);
+      }
+
       logger.debug(`search results ${final?.length}`);
 
       const response: searchUtils.SearchResults = {
