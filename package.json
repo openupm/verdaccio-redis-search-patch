@@ -1,6 +1,6 @@
 {
   "name": "verdaccio-redis-search-patch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The middleware overrides v1/search endpoint with a redis search based backend for verdaccio@5 and verdaccio-redis-storage",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
