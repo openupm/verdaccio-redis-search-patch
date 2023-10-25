@@ -50,6 +50,10 @@ export default function (route, auth: IBasicAuth<RedisSearchPatchConfig>, storag
     });
 
     size = parseInt(size, 10) || 250;
+    if (size > 250) {
+      res.status(400).json({ error: 'Parameter error: size should be equal or less than 250' });
+      return;
+    }
     from = parseInt(from, 10) || 0;
     query.size = size;
     query.from = from;
