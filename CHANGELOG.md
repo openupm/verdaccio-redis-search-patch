@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/openupm/verdaccio-redis-search-patch/compare/1.0.2...1.0.3) (2023-10-25)
+
+
+### Bug Fixes
+
+* limited searchV1 size parameter to equal or less than 250 ([daef70b](https://github.com/openupm/verdaccio-redis-search-patch/commit/daef70bc7ddfcd3da997756b594d70098659f4d9))
+
 ## [1.0.2](https://github.com/openupm/verdaccio-redis-search-patch/compare/1.0.1...1.0.2) (2023-10-24)
 
 
