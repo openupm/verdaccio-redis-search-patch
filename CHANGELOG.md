@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/openupm/verdaccio-redis-search-patch/compare/1.0.6...1.0.7) (2026-05-03)
+
+
+### Bug Fixes
+
+* remove local semantic-release npm shadow ([4502f1b](https://github.com/openupm/verdaccio-redis-search-patch/commit/4502f1bcad736f5e492d47b9d11b4d97a2c5f648))
+
 ## [1.0.6](https://github.com/openupm/verdaccio-redis-search-patch/compare/1.0.5...1.0.6) (2026-05-03)
 
 
