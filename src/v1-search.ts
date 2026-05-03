@@ -44,7 +44,7 @@ export default function (route, auth: IBasicAuth<RedisSearchPatchConfig>, storag
     let data;
     const abort = new AbortController();
 
-    req.socket.on('close', function () {
+    res.once('close', function () {
       logger.debug('search web aborted');
       abort.abort();
     });
