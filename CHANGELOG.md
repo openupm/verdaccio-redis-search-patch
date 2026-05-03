@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/openupm/verdaccio-redis-search-patch/compare/1.0.5...1.0.6) (2026-05-03)
+
+
+### Bug Fixes
+
+* use explicit repository metadata for npm publishing ([1378856](https://github.com/openupm/verdaccio-redis-search-patch/commit/13788563bc692072dd14d3ee0ee0704806f39b55))
+
 ## [1.0.5](https://github.com/openupm/verdaccio-redis-search-patch/compare/1.0.4...1.0.5) (2026-05-03)
 
 
