@@ -37,6 +37,14 @@ jobs:
       uses: actions/setup-node@v6
       with:
         node-version: 24
+        registry-url: https://registry.npmjs.org
+    - name: Use npm with trusted publishing support
+      run: npm install -g npm@11.13.0
+    - name: Show release tool versions
+      run: |
+        node --version
+        npm --version
+        npm config get registry
     - name: npm install
       run: npm install
     - name: npm run build
@@ -51,3 +59,5 @@ jobs:
         branches: master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DEBUG: semantic-release:*,@semantic-release/npm:*
+        NPM_CONFIG_LOGLEVEL: verbose
