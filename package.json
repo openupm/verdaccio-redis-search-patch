@@ -35,7 +35,10 @@
     "redis"
   ],
   "license": "MIT",
-  "repository": "openupm/verdaccio-redis-search-patch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openupm/verdaccio-redis-search-patch.git"
+  },
   "author": "Favo Yang <https://github.com/favoyang>",
   "scripts": {
     "build": "tsc",
