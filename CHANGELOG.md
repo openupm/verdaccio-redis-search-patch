@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/openupm/verdaccio-redis-search-patch/compare/1.0.3...1.0.4) (2026-05-03)
+
+
+### Bug Fixes
+
+* avoid search socket listener leak ([9be3509](https://github.com/openupm/verdaccio-redis-search-patch/commit/9be3509328511d831aa393c4779ae91a3de50db5))
+
 ## [1.0.3](https://github.com/openupm/verdaccio-redis-search-patch/compare/1.0.2...1.0.3) (2023-10-25)
 
 
