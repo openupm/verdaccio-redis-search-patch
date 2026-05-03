@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/openupm/verdaccio-redis-search-patch/compare/1.0.4...1.0.5) (2026-05-03)
+
+
+### Bug Fixes
+
+* release search listener fix with trusted publishing ([fad1244](https://github.com/openupm/verdaccio-redis-search-patch/commit/fad1244e0ea7a40e076cf51ec0b005a9e62af3a2))
+
 ## [1.0.4](https://github.com/openupm/verdaccio-redis-search-patch/compare/1.0.3...1.0.4) (2026-05-03)
 
 
